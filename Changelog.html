@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankh Web</title>
+
+<style> 
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: auto;
+}
+
+.nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FFF7B2;
+  transform: scale(1.1);
+}
+
+.Changelog {
+      background-color: rgba(53, 53, 53, 0.7);
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(172, 172, 172, 0.8);
+    }
+
+  body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</head>
+<body>
+
+<div id="particles-js"></div> 
+
+<div class="navbar">
+<a href="index.html">
+<img src="Imagenes/Logo3.png" alt="Logo" class="navbar-logo">
+</a>
+  <a href="Producto.html" class="nav-link">Producto</a>
+  <a href="FAQ.html" class="nav-link">FAQ</a>
+  <a href="Contacto.html" class="nav-link">Contacto</a>
+  <a href="Changelog.html" class="nav-link">Changelog</a>
+  <a href="AcercaDe.html" class="nav-link">Acerca De</a>
+</div>
+
+
+<div class="contenido">
+  <div class="Changelog">
+    <h2>Todos los cambios al programa desde la Pre-Alpha</h2>
+    <p>Pre-Alpha 1: Integración de funciones en la terminal de PowerShell usando Python</p>
+    <p>Pre-Alpha 2: Versión de prueba de la interfaz gráfica usando la terminal</p>
+    <p>Pre-Alpha 3: Creación de la pantalla de inicio con el logo</p>
+    <p>Pre-Alpha 4: Cambio de todo el motor a HaxeFlixel para un mejor producto</p>
+    <p>Pre-Alpha 5: Integración de toda la introducción al programa con una pantalla de registro local y un sistema de login</p>
+  </div>
+</div>
+
+<script>
+  particlesJS('particles-js', {
+    particles: {
+      number: { value: 100 },
+      color: { value: "#ffffff" }, 
+      shape: { type: "circle" }, 
+      opacity: { value: 0.9, random: true, anim: { enable: true, speed: 1, opacity_min: 0.3, sync: false } },
+      size: { value: 3, random: true, anim: { enable: true, speed: 2, size_min: 1, sync: false } },
+      move: {
+        enable: true,
+        speed: 4,
+        direction: "top-left", 
+        random: false,
+        straight: true,
+        out_mode: "out", 
+        bounce: false,
+      },
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: false }, 
+        onclick: { enable: false }, 
+      },
+    },
+    retina_detect: true,
+  });
+</script>
+
+</body>
+
+</html>
